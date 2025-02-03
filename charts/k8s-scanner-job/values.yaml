@@ -1,0 +1,15 @@
+image:
+  repository: ghcr.io/jitsecurity/k8s-scanner-job
+  tag: 0.1.0
+  pullPolicy: IfNotPresent
+
+cluster:
+  name: "" # This field is required
+
+jit:
+  clientId: ""  # Set in the secret
+  clientSecret: ""  # Set in the secret
+  apiUrl: https://api.jit.io
+
+serviceAccount:
+  name: k8s-scanner-job-sa
